@@ -18,6 +18,8 @@ In the project directory, you can run:
 Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The frontend talks to the backend API using the environment variable `REACT_APP_API_BASE_URL` (see `.env.example`). If not set, it defaults to `http://localhost:3001`.
+
 ### `npm test`
 
 Launches the test runner in interactive watch mode.
@@ -26,6 +28,11 @@ Launches the test runner in interactive watch mode.
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+## API Base URL
+
+- Configure `REACT_APP_API_BASE_URL` to point to your backend (default fallback is `http://localhost:3001`).
+- The backend should enable CORS for `http://localhost:3000` to allow requests from the frontend.
 
 ## Customization
 

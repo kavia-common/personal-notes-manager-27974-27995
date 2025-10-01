@@ -2,6 +2,8 @@
 /**
  * API client for Notes backend.
  * Uses BASE_URL from environment or window.env to allow CORS-safe absolute requests.
+ * Default fallback points to backend at http://localhost:3001.
+ * Set REACT_APP_API_BASE_URL in .env to override for deployments.
  */
 const BASE_URL =
   process.env.REACT_APP_API_BASE_URL ||
